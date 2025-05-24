@@ -2,6 +2,8 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, ShoppingCart } from 'lucide-react';
+import ProductImageManager from './ProductImageManager';
+import { useState } from 'react';
 
 interface Product {
   id: string;
@@ -18,6 +20,12 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
+  const [currentImage, setCurrentImage] = useState(product.image);
+
+  const handleImageUpdate = (newImageUrl: string) => {
+    setCurrentImage(newImageUrl);
+  };
+
   return (
     <Card className="group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 bg-white/80 backdrop-blur-sm">
       <CardContent className="p-6">
@@ -25,7 +33,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         <div className="relative mb-6 overflow-hidden rounded-2xl">
           <div className="aspect-square">
             <img 
-              src={product.image}
+              src={currentImage}
               alt={product.name}
               className="w-full h-full object-cover"
             />
@@ -37,6 +45,15 @@ const ProductCard = ({ product }: ProductCardProps) => {
           >
             <Heart className="h-4 w-4" />
           </Button>
+          
+          {/* Show image generator only for banana lip balm */}
+          {product.id === '1' && (
+            <ProductImageManager
+              productName={product.name}
+              currentImage={currentImage}
+              onImageUpdate={handleImageUpdate}
+            />
+          )}
         </div>
 
         {/* Product Info */}
