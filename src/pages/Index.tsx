@@ -8,6 +8,7 @@ import AboutSection from '@/components/AboutSection';
 import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import ChatBot from '@/components/ChatBot';
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       <FAQSection />
       <ContactSection />
       <Footer />
+      <ChatBot />
     </div>
   );
 };
