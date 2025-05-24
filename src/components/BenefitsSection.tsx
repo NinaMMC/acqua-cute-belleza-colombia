@@ -63,32 +63,70 @@ const BenefitsSection = () => {
           ))}
         </div>
 
-        {/* Feature Highlight */}
-        <div className="bg-gradient-to-r from-pastel-pink/10 via-white to-soft-pink/10 rounded-3xl p-12 text-center">
-          <h3 className="text-3xl font-bold mb-6 gradient-text">
-            Compromiso con la Belleza Consciente
+        {/* Visual Section with Image */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <div className="relative">
+            <img 
+              src="https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Belleza sostenible"
+              className="w-full h-96 object-cover rounded-3xl shadow-lg"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-pastel-pink/30 to-transparent rounded-3xl"></div>
+          </div>
+          <div>
+            <h3 className="text-3xl font-bold mb-6 gradient-text">
+              Compromiso con la Belleza Consciente
+            </h3>
+            <p className="text-lg text-gray-600 mb-6">
+              Cada producto de Acqua Cute Face es una declaración de amor hacia ti y hacia nuestro planeta. 
+              Formulados con ingredientes naturales de Colombia, libres de químicos dañinos, y con un empaque 
+              100% reciclable.
+            </p>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="text-center p-4 bg-gradient-to-br from-pastel-pink/10 to-soft-pink/10 rounded-2xl">
+                <span className="text-2xl font-bold text-pastel-pink">100%</span>
+                <p className="text-sm text-gray-600">Natural</p>
+              </div>
+              <div className="text-center p-4 bg-gradient-to-br from-soft-pink/10 to-light-pink/10 rounded-2xl">
+                <span className="text-2xl font-bold text-soft-pink">0</span>
+                <p className="text-sm text-gray-600">Químicos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Ingredients Showcase */}
+        <div className="bg-gradient-to-r from-pastel-pink/5 via-white to-soft-pink/5 rounded-3xl p-12">
+          <h3 className="text-3xl font-bold mb-8 text-center gradient-text">
+            Ingredientes Naturales Colombianos
           </h3>
-          <p className="text-lg text-gray-600 mb-8 max-w-4xl mx-auto">
-            Cada producto de Acqua Cute Face es una declaración de amor hacia ti y hacia nuestro planeta. 
-            Formulados con ingredientes naturales de Colombia, libres de químicos dañinos, y con un empaque 
-            100% reciclable. Porque la verdadera belleza es aquella que no compromete nuestros valores.
-          </p>
-          <div className="flex flex-wrap justify-center gap-8 text-center">
-            <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold text-pastel-pink">100%</span>
-              <span className="text-sm text-gray-600">Natural</span>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <img 
+                src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Frutos naturales"
+                className="w-24 h-24 object-cover rounded-full mx-auto mb-4"
+              />
+              <h4 className="font-semibold text-gray-800 mb-2">Frutos Amazónicos</h4>
+              <p className="text-sm text-gray-600">Rico en antioxidantes y vitaminas</p>
             </div>
-            <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold text-soft-pink">0</span>
-              <span className="text-sm text-gray-600">Químicos</span>
+            <div className="text-center">
+              <img 
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Naturaleza colombiana"
+                className="w-24 h-24 object-cover rounded-full mx-auto mb-4"
+              />
+              <h4 className="font-semibold text-gray-800 mb-2">Extractos Botánicos</h4>
+              <p className="text-sm text-gray-600">De la biodiversidad colombiana</p>
             </div>
-            <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold text-light-pink">♻️</span>
-              <span className="text-sm text-gray-600">Eco-friendly</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold text-pastel-pink">🐰</span>
-              <span className="text-sm text-gray-600">Cruelty Free</span>
+            <div className="text-center">
+              <img 
+                src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Ingredientes orgánicos"
+                className="w-24 h-24 object-cover rounded-full mx-auto mb-4"
+              />
+              <h4 className="font-semibold text-gray-800 mb-2">Aceites Esenciales</h4>
+              <p className="text-sm text-gray-600">Pureza y calidad garantizada</p>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ const AboutSection = () => {
   return (
     <section id="sobre" className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Content */}
           <div className="space-y-8 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold">
@@ -55,56 +55,90 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* Story Cards */}
-          <div className="space-y-6">
-            <Card className="border-0 bg-gradient-to-br from-pastel-pink/10 to-soft-pink/10">
-              <CardContent className="p-6">
-                <h3 className="font-semibold text-gray-800 mb-3">🌱 Nuestro Origen</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Todo comenzó con la pasión por rescatar los secretos de belleza ancestrales 
-                  de Colombia. Investigamos ingredientes nativos como el borojó, el banano y 
-                  los frutos rojos amazónicos para crear fórmulas únicas.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 bg-gradient-to-br from-soft-pink/10 to-light-pink/10">
-              <CardContent className="p-6">
-                <h3 className="font-semibold text-gray-800 mb-3">🇨🇴 Compromiso Local</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Trabajamos directamente con comunidades rurales colombianas, garantizando 
-                  un comercio justo y apoyando el desarrollo sostenible de nuestras regiones.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 bg-gradient-to-br from-light-pink/10 to-pastel-pink/10">
-              <CardContent className="p-6">
-                <h3 className="font-semibold text-gray-800 mb-3">🌍 Impacto Positivo</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Cada compra contribuye a la conservación de la biodiversidad colombiana y 
-                  al empoderamiento de mujeres emprendedoras en zonas rurales del país.
-                </p>
-              </CardContent>
-            </Card>
+          {/* Image */}
+          <div className="relative">
+            <img 
+              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Laboratorio natural"
+              className="w-full h-96 object-cover rounded-3xl shadow-lg"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-pastel-pink/20 to-transparent rounded-3xl"></div>
           </div>
         </div>
 
+        {/* Story Cards */}
+        <div className="grid md:grid-cols-3 gap-6 mb-16">
+          <Card className="border-0 bg-gradient-to-br from-pastel-pink/10 to-soft-pink/10">
+            <CardContent className="p-6 text-center">
+              <img 
+                src="https://images.unsplash.com/photo-1574263867128-b879b11c25b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Origen natural"
+                className="w-20 h-20 object-cover rounded-full mx-auto mb-4"
+              />
+              <h3 className="font-semibold text-gray-800 mb-3">🌱 Nuestro Origen</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Todo comenzó con la pasión por rescatar los secretos de belleza ancestrales 
+                de Colombia. Investigamos ingredientes nativos únicos.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="border-0 bg-gradient-to-br from-soft-pink/10 to-light-pink/10">
+            <CardContent className="p-6 text-center">
+              <img 
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Compromiso local"
+                className="w-20 h-20 object-cover rounded-full mx-auto mb-4"
+              />
+              <h3 className="font-semibold text-gray-800 mb-3">🇨🇴 Compromiso Local</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Trabajamos directamente con comunidades rurales colombianas, garantizando 
+                un comercio justo y desarrollo sostenible.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="border-0 bg-gradient-to-br from-light-pink/10 to-pastel-pink/10">
+            <CardContent className="p-6 text-center">
+              <img 
+                src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                alt="Impacto positivo"
+                className="w-20 h-20 object-cover rounded-full mx-auto mb-4"
+              />
+              <h3 className="font-semibold text-gray-800 mb-3">🌍 Impacto Positivo</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Cada compra contribuye a la conservación de la biodiversidad colombiana y 
+                al empoderamiento de mujeres emprendedoras.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
         {/* Team Section */}
-        <div className="mt-20 text-center">
+        <div className="text-center">
           <h3 className="text-3xl font-bold mb-8 gradient-text">Nuestro Equipo</h3>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
-            Un equipo diverso de mujeres apasionadas por la belleza natural, la sostenibilidad 
-            y el empoderamiento femenino. Juntas trabajamos para hacer realidad nuestra visión.
-          </p>
-          
-          <div className="bg-gradient-to-r from-pastel-pink/5 via-white to-soft-pink/5 rounded-3xl p-8">
-            <p className="text-gray-600 italic text-lg">
-              "Creemos que la verdadera belleza viene de sentirse bien con una misma, 
-              usando productos que reflejen nuestros valores y cuiden nuestro planeta."
-            </p>
-            <div className="mt-4 text-pastel-pink font-medium">
-              - Equipo Acqua Cute Face
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <img 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Equipo Acqua Cute Face"
+                className="w-full h-64 object-cover rounded-3xl shadow-lg"
+              />
+            </div>
+            <div className="text-left">
+              <p className="text-lg text-gray-600 mb-6">
+                Un equipo diverso de mujeres apasionadas por la belleza natural, la sostenibilidad 
+                y el empoderamiento femenino. Juntas trabajamos para hacer realidad nuestra visión.
+              </p>
+              <div className="bg-gradient-to-r from-pastel-pink/5 via-white to-soft-pink/5 rounded-2xl p-6">
+                <p className="text-gray-600 italic">
+                  "Creemos que la verdadera belleza viene de sentirse bien con una misma, 
+                  usando productos que reflejen nuestros valores y cuiden nuestro planeta."
+                </p>
+                <div className="mt-4 text-pastel-pink font-medium">
+                  - Equipo Acqua Cute Face
+                </div>
+              </div>
             </div>
           </div>
         </div>

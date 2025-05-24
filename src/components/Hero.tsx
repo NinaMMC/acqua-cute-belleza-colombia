@@ -51,15 +51,17 @@ const Hero = () => {
 
           {/* Hero Image */}
           <div className="relative animate-float">
-            <div className="bg-gradient-to-br from-pastel-pink/20 to-soft-pink/20 rounded-full p-8 max-w-md mx-auto">
-              <div className="bg-white rounded-full p-8 shadow-2xl">
-                <div className="w-64 h-64 bg-gradient-to-br from-light-pink to-pastel-pink rounded-full flex items-center justify-center">
-                  <div className="text-white text-center">
-                    <div className="text-4xl font-script mb-2">Acqua</div>
-                    <div className="text-2xl font-light">Cute Face</div>
-                    <div className="text-sm mt-2 opacity-90">Kit Natural</div>
-                  </div>
-                </div>
+            <div className="relative max-w-md mx-auto">
+              <img 
+                src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Productos de belleza natural"
+                className="w-full h-auto rounded-3xl shadow-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-pastel-pink/20 to-transparent rounded-3xl"></div>
+              <div className="absolute bottom-6 left-6 text-white">
+                <div className="text-2xl font-script mb-1">Acqua</div>
+                <div className="text-lg font-light">Cute Face</div>
+                <div className="text-sm opacity-90">Belleza Natural</div>
               </div>
             </div>
           </div>

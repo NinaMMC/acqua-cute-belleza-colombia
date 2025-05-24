@@ -23,10 +23,12 @@ const ProductCard = ({ product }: ProductCardProps) => {
       <CardContent className="p-6">
         {/* Product Image */}
         <div className="relative mb-6 overflow-hidden rounded-2xl">
-          <div className="aspect-square bg-gradient-to-br from-light-pink/30 to-pastel-pink/20 flex items-center justify-center">
-            <div className="w-32 h-32 bg-gradient-to-br from-pastel-pink to-soft-pink rounded-full flex items-center justify-center text-white font-bold text-lg">
-              {product.name.split(' ')[0]}
-            </div>
+          <div className="aspect-square">
+            <img 
+              src={product.image}
+              alt={product.name}
+              className="w-full h-full object-cover"
+            />
           </div>
           <Button
             variant="ghost"
