@@ -49,7 +49,7 @@ const ChatBot = () => {
             {/* Chat Content */}
             <div className="h-80">
               <iframe
-                src="https://copilotstudio.microsoft.com/environments/Default-6ca34ae1-466f-44bc-a7aa-0ac5a78c61b1/bots/cr3a3_ada0UOe2p/canvas?__version__=2&enableFileAttachment=true"
+                src="https://copilotstudio.microsoft.com/environments/Default-6ca34ae1-466f-44bc-a7aa-0ac5a78c61b1/bots/cr3a3_ada0UOe2p/webchat"
                 width="100%"
                 height="100%"
                 style={{ border: 'none' }}
