@@ -22,9 +22,11 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-script font-bold gradient-text">
-              Acqua Cute Face
-            </h1>
+            <img 
+              src="/lovable-uploads/addb8ca2-b3fb-44d8-a404-f60a94b8d607.png"
+              alt="Acqua Cute Face"
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
