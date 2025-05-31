@@ -1,4 +1,3 @@
-
 import ProductCard from './ProductCard';
 import { Button } from '@/components/ui/button';
 
@@ -9,7 +8,7 @@ const ProductsSection = () => {
       name: 'Bálsamo Labial de Banano',
       description: 'Hidrata y suaviza tus labios con el poder nutritivo del banano colombiano. Fórmula natural que proporciona hidratación duradera.',
       price: '$25.000',
-      image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/lovable-uploads/e63187bb-b83a-427c-a852-f4feab2ac3a7.png',
       benefits: [
         'Hidratación profunda',
         'Suavidad natural',
