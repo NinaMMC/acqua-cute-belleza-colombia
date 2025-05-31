@@ -1,4 +1,3 @@
-
 import ProductCard from './ProductCard';
 import { Button } from '@/components/ui/button';
 
@@ -23,7 +22,7 @@ const ProductsSection = () => {
       name: 'Mascarilla Capilar de Borojó',
       description: 'Revitaliza tu cabello con la mascarilla de borojó, una fruta amazónica rica en antioxidantes y nutrientes esenciales.',
       price: '$50.000',
-      image: 'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: '/lovable-uploads/a5144e77-2992-439c-8ffa-6ea554b437f1.png',
       benefits: [
         'Fortalece el cabello',
         'Aporta brillo natural',
