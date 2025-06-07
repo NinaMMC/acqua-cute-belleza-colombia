@@ -53,8 +53,8 @@ const Hero = () => {
           <div className="relative animate-float">
             <div className="relative max-w-md mx-auto">
               <img 
-                src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Productos de belleza natural"
+                src="/lovable-uploads/6676f977-2b3d-4ba6-9654-5937a1cb059a.png"
+                alt="Belleza natural con ingredientes colombianos"
                 className="w-full h-auto rounded-3xl shadow-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-pastel-pink/20 to-transparent rounded-3xl"></div>
