@@ -36,7 +36,7 @@ const ProductsSection = () => {
       name: 'Mascarilla Facial de Frutos Rojos',
       description: 'Rejuvenece tu piel con antioxidantes naturales de frutos rojos colombianos. Ideal para todo tipo de piel.',
       price: '$70.000',
-      image: '/lovable-uploads/958c0969-7cb1-4ed0-8d20-8c8abcf30aec.png',
+      image: '/lovable-uploads/f4f4d745-b0d4-496d-8226-afadb2b20b7e.png',
       benefits: [
         'Antioxidante natural',
         'Luminosidad instantánea',
