@@ -52,7 +52,7 @@ const ProductsSection = () => {
     name: 'Kit Completo Acqua Cute Face',
     description: 'Rutina completa de belleza natural con nuestros tres productos estrella. Perfecto para una experiencia de cuidado integral.',
     price: '$114.000',
-    image: '/lovable-uploads/f8a9851a-9600-4c54-af8a-22518359a17d.png',
+    image: '/lovable-uploads/3edbbd7c-02ec-460e-bfcc-a0554cf30fa8.png',
     benefits: [
       'Rutina completa de belleza',
       'Ahorro del 20%',
