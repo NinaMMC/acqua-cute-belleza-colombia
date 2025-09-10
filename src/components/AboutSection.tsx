@@ -120,7 +120,7 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="/lovable-uploads/b7d7c881-142e-47b3-8b01-8cb94e7bf49e.png"
                 alt="Equipo Acqua Cute Face"
                 className="w-full h-64 object-cover rounded-3xl shadow-lg"
               />
