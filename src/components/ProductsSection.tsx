@@ -22,7 +22,7 @@ const ProductsSection = () => {
       name: 'Mascarilla Capilar de Borojó',
       description: 'Revitaliza tu cabello con la mascarilla de borojó, una fruta amazónica rica en antioxidantes y nutrientes esenciales.',
       price: '$50.000',
-      image: '/lovable-uploads/a5144e77-2992-439c-8ffa-6ea554b437f1.png',
+      image: '/lovable-uploads/dd84c4af-14ee-4ff3-95ad-5f42a797af04.png',
       benefits: [
         'Fortalece el cabello',
         'Aporta brillo natural',
